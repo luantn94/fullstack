@@ -1,5 +1,191 @@
-$mautim: #87509c //Tím 
-$maungoc: #17c2a4 // Cyan
-$mauvang: #ffdd99 // Vang 
-$maudo: #d74680 // Đỏ 
-$mauxanh: #3c5499 // Xanh 
+$tim: #87509c //Tím 
+$ngoc: #17c2a4 // Cyan
+$vang: #ffdd99 // Vang 
+$do: #d74680 // Đỏ 
+$xanh: #3c5499 // Xanh 
+
+=textFormat($bgColor:#fff, $color: #000)
+    background: $bgColor
+    min-height: 400px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: $color
+    padding: 3rem 0
+=beforeTag($color:#fff)
+    &:before
+            content: ''
+            display: block
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            background: darken($color,10%)
+            height: 3px
+            width: 100px
+            bottom: -10px
+nav
+    background: #87509c
+    min-height: 120px
+    display: flex
+    align-items: center
+    text-align: center
+    .nav_wrap
+        display: flex
+        ul
+            margin-left: auto
+            list-style: none
+            li 
+                text-align: center
+                display: inline-block
+                margin: 10px 10px
+                width: 70px
+                border-radius: 5px
+                padding: 3px 0 6px 0
+                a
+                    color: white
+                    font-size: .8rem
+                    text-decoration: none
+                &:hover
+                    background: #643a79
+
+.home_slider
+    +textFormat($tim, #fff)
+    .btn-view
+        background: #eb7d4b
+
+.home_service
+    +textFormat($ngoc, #fff)
+    h1 
+        position: relative
+        margin-bottom: 2rem
+        letter-spacing: 2px
+        +beforeTag($ngoc)
+
+.home_team
+    +textFormat(#e7f1f8)
+    h1 
+        position: relative
+        margin-bottom: 2rem
+        letter-spacing: 2px
+        +beforeTag(#fff)
+    
+    img 
+        max-width: 100%
+        border-radius: 50%
+        border-inline-end: 2px
+    a
+        color: #30bae7
+    ul
+        display: block
+        list-style: none
+        text-align: center
+        
+        margin: auto
+        padding: 0
+        li
+            display: inline-block
+            border-radius: 50%
+            background: darken(#e7f1f8, 10%)
+            width: 30px
+            height: 30px
+            margin: auto 3px
+            a
+                color: #FFF
+
+.home_skills
+    +textFormat(#FFF)
+    h1 
+        position: relative
+        margin-bottom: 2rem
+        letter-spacing: 2px
+        +beforeTag(#fff)
+    
+    .skill_item
+        .pink
+            .bar
+                border-color: #d74680
+            .fill
+                border-color: #d74680
+        .cyan
+            .bar
+                border-color: #15c7a8
+            .fill
+                border-color: #15c7a8
+
+.home_protfolio
+    +textFormat($vang)
+    h1 
+        position: relative
+        margin-bottom: 2rem
+        letter-spacing: 2px
+        +beforeTag(#fff)
+    .btn-more
+        background: #ebc985
+        color: black
+        min-width: 80px
+        margin-left: 5px
+        &:hover
+            background: white
+    img
+        width: 100%
+    .big_button
+        line-height: 40px
+        background: #17c2a4
+        color: white
+        min-width: 250px
+        box-shadow: 0px 5px #14a58c
+        &:hover
+            background: white
+            color: black
+
+.home_about
+    +textFormat($do, #fff)
+    h1 
+        position: relative
+        margin-bottom: 2rem
+        letter-spacing: 2px
+        +beforeTag(#fff)
+    img
+        max-width: 80px
+    .all
+        text-align: left
+    .comment
+        font-style: italic
+    .name
+        font-weight: bold
+    .title
+        color: $vang
+
+.home_touch
+    +textFormat($xanh, #fff)
+    h1 
+        position: relative
+        margin-bottom: 2rem
+        letter-spacing: 2px
+        +beforeTag(#fff)
+    .form-control
+        background: #273a71
+        color: white
+        &:placeholder
+            color: #fff
+    .big_button
+        line-height: 40px
+        background: #30bae7
+        color: white
+        min-width: 250px
+        box-shadow: 0px 5px #299ec5
+        &:hover
+            background: white
+            color: black
+footer
+    background: #344b8e
+    min-height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    a
+        color: white
+        font-size: 20px
+        margin: 5px 20px

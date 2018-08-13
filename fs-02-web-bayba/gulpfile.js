@@ -16,10 +16,19 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('./dist/img'));
 });
 
+// Copy IMG
+gulp.task('copy-fonts', function () {
+  return gulp.src([
+      './src/fonts/**.*',
+    ])
+    .pipe(gulp.dest('./dist/fonts'));
+});
+
 // Nối file CSS
 gulp.task('noifile-css', function () {
   return gulp.src([
       'bower_components/bootstrap/dist/css/bootstrap.min.css',
+      'bower_components/font-awesome/css/font-awesome.min.css',
     ])
     .pipe(concat('thuvien.css'))
     .pipe(gulp.dest('./dist/css'));
@@ -90,6 +99,7 @@ gulp.task('browser-sync', function () {
 gulp.task('default', function () {
   gulp.start([
     'copy',
+    'copy-fonts',
     'noifile-css',
     'noifile-js',
     'taocss',

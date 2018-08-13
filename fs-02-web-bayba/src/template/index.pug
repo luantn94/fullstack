@@ -1,3 +1,230 @@
 extends _layout/layout.pug
 block main 
-	.abc HELLO CUDA
+	section.home_slider
+		.container
+			.row
+				.col
+					h1 Hi there! We are the new kids on the block and we build awesome websites and mobile apps.
+					p
+						a.btn.btn-view(href="#") WORK WITH US!
+
+	section.home_service
+		.container
+			.row
+				.col
+					h1 SERVICES WE PROVIDE
+					p We are working with both individuals and businesses from all over the globe to create awesome websites and applications.
+			.row
+				//- - for(x=1; x<5; x++)
+				//- 	.col-sm-6.col-lg-3
+				//- 		img(src="/img/home_icon_"+x+".png", alt="", srcset="")
+				//- 		h2 head
+				//- 		p aaaaaaaaaaaaa
+				.col-sm-6.col-lg-3
+					img(src="/img/home_icon_1.png", alt="", srcset="")
+					h2 BREANDING
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, impedit
+				.col-sm-6.col-lg-3
+					img(src="/img/home_icon_2.png", alt="", srcset="")
+					h2 DESIGN
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, impedit
+				.col-sm-6.col-lg-3
+					img(src="/img/home_icon_3.png", alt="", srcset="")
+					h2 DEVELOPMENT
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, impedit
+				.col-sm-6.col-lg-3
+					img(src="/img/home_icon_4.png", alt="", srcset="")
+					h2 ROCKET SCIENCE
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, impedit
+
+	section.home_team
+			.container
+				.row
+					.col
+						h1 MEET OUR BEAUTIFUL TEAM
+						p We are a small team of designers and developers, who help brands with big ideas.
+				.row
+					.col-sm-6.col-lg-3
+						img(src="/img/emmaa.jpg", alt="", srcset="")
+						h3 EMMA WATSON
+						a(href="#") CEO / Marketing Guru 
+						p  Never frown, even when you are sad, because you never know who is falling in love with your smile
+						ul.social
+							li.item
+								a.fa.fa-facebook(href="#")
+									
+							li.item
+								a.fa.fa-twitter(href="#")
+									
+							li.item
+								a.fa.fa-envelope(href="#")
+									
+					.col-sm-6.col-lg-3
+						img(src="/img/emmaa.jpg", alt="", srcset="")
+						h3 EMMA WATSON
+						a(href="#") CEO / Marketing Guru
+						p  Never frown, even when you are sad, because you never know who is falling in love with your smile
+						ul.social
+							li.item
+								a.fa.fa-facebook(href="#")
+									
+							li.item
+								a.fa.fa-twitter(href="#")
+									
+							li.item
+								a.fa.fa-envelope(href="#")
+									
+					.col-sm-6.col-lg-3
+						img(src="/img/emmaa.jpg", alt="", srcset="")
+						h3 EMMA WATSON
+						a(href="#") CEO / Marketing Guru
+						p  Never frown, even when you are sad, because you never know who is falling in love with your smile
+						ul.social
+							li.item
+								a.fa.fa-facebook(href="#")
+									
+							li.item
+								a.fa.fa-twitter(href="#")
+									
+							li.item
+								a.fa.fa-envelope(href="#")
+									
+					.col-sm-6.col-lg-3
+						img(src="/img/emmaa.jpg", alt="", srcset="")
+						h3 EMMA WATSON
+						a(href="#") CEO / Marketing Guru
+						p  Never frown, even when you are sad, because you never know who is falling in love with your smile
+						ul.social
+							li.item
+								a.fa.fa-facebook(href="#")
+									
+							li.item
+								a.fa.fa-twitter(href="#")
+									
+							li.item
+								a.fa.fa-envelope(href="#")
+									
+	section.home_skills
+			.container
+				.row
+					.col
+						h1 WE GOT SKILLS
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibt tempor sưa tree in front of Đoàn Kết High School.
+
+				.row.mt-5
+					.col-sm-6.col-md-3.skill_item
+						.c100.p90.big.blue
+							span 90%
+							.slice
+								.bar
+								.fill
+						p WEB DESIGN
+					.col-sm-6.col-md-3.skill_item
+						.c100.p75.big.pink
+							span 75%
+							.slice
+								.bar
+								.fill
+						p HTML / CSS
+					.col-sm-6.col-md-3.skill_item
+						.c100.p70.big.cyan
+							span 70%
+							.slice
+								.bar
+								.fill
+						p GRAPHIC DESIGN
+					.col-sm-6.col-md-3.skill_item
+						.c100.p85.big.orange
+							span 85%
+							.slice
+								.bar
+								.fill
+						p UI / UX
+	section.home_protfolio
+		.container
+			.row
+				.col
+					h2 OUR PORTFOLIO
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+						br
+						|	nibt tempor sưa tree in front of Đoàn Kết High School.
+					p
+						a.mt-5.btn.btn-more(href="#") ALL
+						a.mt-5.btn.btn-more(href="#") WEB
+						a.mt-5.btn.btn-more(href="#") APPS
+						a.mt-5.btn.btn-more(href="#") INCONS
+			.row
+				.col-lg-6.img-fluid
+					img.my-4(src="./img/home_portfolio_1.png")
+					p Isometric Perspective Mock-Up
+				.col-lg-6.img-fluid
+					img.my-4(src="./img/home_portfolio_2.png")
+					p Isometric Perspective Mock-Up
+			.row
+				.col-lg-6.img-fluid
+					img.my-4(src="./img/home_portfolio_3.png")
+					p Isometric Perspective Mock-Up
+				.col-lg-6.img-fluid
+					img.my-4(src="./img/home_portfolio_4.png")
+					p Isometric Perspective Mock-Up
+			.row
+				.col
+					a.mt-5.btn.btn-more.big_button(href="#") LOAD MORE PROJECT
+	section.home_about
+		.container
+			.row
+				.col
+					h2 WHAT PEOPLE SAY ABOUT US
+					p Our clients love us !!!
+			.row.all
+				.col-lg-6.mt-5
+					.row
+						.col-sm-3
+							<img src="./img/avatar.png" alt="" class="rounded-circle">
+						.col-sm-9
+							p.comment.mb-3 “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+							p.name Chanel Iman
+							p.title CEO of Pinterest
+				.col-lg-6.mt-5
+					.row
+						.col-sm-3
+							<img src="./img/avatar.png" alt="" class="rounded-circle">
+						.col-sm-9
+							p.comment.mb-3 “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+							p.name Chanel Iman
+							p.title CEO of Pinterest
+				.col-lg-6.mt-5
+					.row
+						.col-sm-3
+							<img src="./img/avatar.png" alt="" class="rounded-circle">
+						.col-sm-9
+							p.comment.mb-3 “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+							p.name Chanel Iman
+							p.title CEO of Pinterest
+				.col-lg-6.mt-5
+					.row
+						.col-sm-3
+							<img src="./img/avatar.png" alt="" class="rounded-circle">
+						.col-sm-9
+							p.comment.mb-3 “Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+							p.name Chanel Iman
+							p.title CEO of Pinterest
+	section.home_touch
+		.container
+			.row
+				.col
+					h2 GET IN TOCUH
+					p 1600 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 69-69-69
+			.row
+				.col-lg-2
+				.col-lg-8.col-md-12
+					.form-row
+						.form-group.col-md-6.col-sm-12
+							input.form-control(type="text" placeholder="Your Name")
+						.form-group.col-md-6.col-sm-12
+							input.form-control(type="text" placeholder="Your Email")
+						.form-group.col-12
+							textarea.form-control(placeholder="Your Message", cols="30", rows="10")
+			.row
+				.col
+					a.mt-5.btn.btn-more.big_button(href="#") SEND MESSAGE
