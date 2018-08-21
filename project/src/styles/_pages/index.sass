@@ -1,0 +1,80 @@
+body
+	font-family: Roboto
+.home-banner
+	margin-bottom: 1rem
+	.item
+		position: relative
+		.info
+			display: flex
+			align-items: center
+			height: 100%
+			width: 100%
+			position: absolute	
+			color: #fff
+	.owl-dots
+		position: absolute
+		bottom: 1rem
+		left: 50%
+		transform: translateX(-50%)
+.home-news
+	margin-bottom: 1rem
+	.item
+		a
+			&:hover
+				text-decoration: none
+			figure
+				.blockimg
+					border-radius: 10px
+					overflow: hidden
+					margin-bottom: 0.7rem
+					position: relative
+					i
+						position: absolute
+						top: 50%
+						left: 50%
+						color: #fff
+						font-size: 3rem
+						transform: translate(-50%, -50%)
+						transition: 0.3s all ease-in-out
+						display: none
+					img
+						width: 100%
+					&:before
+						content: ''
+						position: absolute
+						height: 100%
+						width: 100%
+						top: -100%
+						transition: 0.3s all ease-in-out
+					&:hover
+						i
+							display: block
+
+						&:before
+							top: 0
+							background: rgba(0, 0, 0, 0.2)
+
+			figcaption
+				h3 
+					
+					line-height: 1.2rem
+					margin-bottom: 0
+					font-size: 1.2rem
+					color: $blue
+				time
+					color: $silver
+					font-size: .85rem
+				p
+					color: darken($silver, 40%)
+					font-size: 1rem
+					line-height: 1.5rem
+					overflow: hidden	
+					height: 4.5rem
+
+.home-logo
+	margin-bottom: 1rem
+	.item
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
