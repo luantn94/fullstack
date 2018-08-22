@@ -1,6 +1,10 @@
 extends _layout/layout
 
 //- gulp
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
 
 block body
 	section.home-banner
@@ -75,6 +79,15 @@ block body
 			.row
 				.col-12
 					.owl-carousel.owl-theme
+						.item 
+							figure
+								img.img-fluid(src="./img/home_logo_1.png", alt="")
+						.item 
+							figure
+								img.img-fluid(src="./img/home_logo_2.png", alt="")
+						.item 
+							figure
+								img.img-fluid(src="./img/home_logo_3.png", alt="")
 						.item 
 							figure
 								img.img-fluid(src="./img/home_logo_1.png", alt="")
