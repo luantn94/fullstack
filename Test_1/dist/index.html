@@ -86,35 +86,131 @@
   <body class="home-page" id="top-page"><!-- ////////////// Header ////////////// --><!-- ////////////// HEADER ////////////// -->
     <header class="bg-light">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand my-logo" href="#"> <img src="./img/logo.png" alt="Logo"></a>
+        <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fullStackMenu" aria-controls="fullStackMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
           <div class="collapse navbar-collapse" id="fullStackMenu">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active"><a class="nav-link" href="index.html">My Account</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Check Gift</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">CardMy</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Wishlist</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">The Different</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Career</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Checkout</a></li>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="dropdownFS" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gian hàng</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownFS"><a class="dropdown-item" href="#">Nam</a><a class="dropdown-item" href="#">Nữ</a></div>
+              </li>
             </ul>
+            <form class="form-inline my-2 my-md-0">
+              <input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+            </form>
           </div>
         </nav>
       </div>
     </header><!-- ////////////// HEADER ////////////// --><!-- ////////////// End Header ////////////// -->
 <!-- ////////////// Begin Main ////////////// -->
     <main>
-      <section class="home-slider">
+      <section class="home-banner">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="owl-carousel owl-theme">
+                <div class="item"> 
+                  <div class="info">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-8">
+                          <h2>title</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusamus laborum vel, dolor minima, distinctio alias dignissimos neque veritatis eligendi debitis odio esse amet pariatur autem voluptate explicabo facere earum?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <figure><img src="./img/home_banner.png" alt=""></figure>
+                </div>
+                <div class="item"> 
+                  <div class="info">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-8">
+                          <h2>title</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusamus laborum vel, dolor minima, distinctio alias dignissimos neque veritatis eligendi debitis odio esse amet pariatur autem voluptate explicabo facere earum?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <figure><img src="./img/home_banner.png" alt=""></figure>
+                </div>
+                <div class="item"> 
+                  <div class="info">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-8">
+                          <h2>title</h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium accusamus laborum vel, dolor minima, distinctio alias dignissimos neque veritatis eligendi debitis odio esse amet pariatur autem voluptate explicabo facere earum?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <figure><img src="./img/home_banner.png" alt=""></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-news">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 item"><a href="#" title="title">
+                <figure>
+                  <div class="blockimg"><i class="fa fa-eye"></i><img src="./img/home_img_1.png" alt=""></div>
+                  <figcaption>
+                    <h3>title</h3>
+                    <time>17/08/2018</time>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias voluptatibus, voluptatem numquam fuga ipsa atque et soluta ratione expedita ipsam aperiam molestiae sed quaerat provident eos eius eligendi? Veritatis.</p>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-md-4 item"><a href="#" title="title">
+                <figure>
+                  <div class="blockimg"><i class="fa fa-eye"></i><img src="./img/home_img_2.png" alt=""></div>
+                  <figcaption>
+                    <h3>title</h3>
+                    <time>17/08/2018</time>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias voluptatibus, voluptatem numquam fuga ipsa atque et soluta ratione expedita ipsam aperiam molestiae sed quaerat provident eos eius eligendi? Veritatis.</p>
+                  </figcaption>
+                </figure></a></div>
+            <div class="col-md-4 item"><a href="#" title="title">
+                <figure>
+                  <div class="blockimg"><i class="fa fa-eye"></i><img src="./img/home_img_3.png" alt=""></div>
+                  <figcaption>
+                    <h3>title</h3>
+                    <time>17/08/2018</time>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam alias voluptatibus, voluptatem numquam fuga ipsa atque et soluta ratione expedita ipsam aperiam molestiae sed quaerat provident eos eius eligendi? Veritatis.</p>
+                  </figcaption>
+                </figure></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="home-logo">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <figure>
-                <div class="img-banner"><img class="img-fluid" src="./img/home_slider_1.png" alt=""></div>
-                <figcaption>
-                  <h2>Chúng tôi là Fullstack Vietnam</h2>
-                  <p>Reference site about  Lorem Ipsum, giving information on its origins, as well as a random Lípsum generator</p><a class="btn btn-viewmore" href="javascript:void(0)">Xem chi tiết</a>
-                </figcaption>
-              </figure>
+              <div class="owl-carousel owl-theme">
+                <div class="item"> 
+                  <figure><img class="img-fluid" src="./img/home_logo_1.png" alt=""></figure>
+                </div>
+                <div class="item"> 
+                  <figure><img class="img-fluid" src="./img/home_logo_2.png" alt=""></figure>
+                </div>
+                <div class="item"> 
+                  <figure><img class="img-fluid" src="./img/home_logo_3.png" alt=""></figure>
+                </div>
+                <div class="item"> 
+                  <figure><img class="img-fluid" src="./img/home_logo_1.png" alt=""></figure>
+                </div>
+                <div class="item"> 
+                  <figure><img class="img-fluid" src="./img/home_logo_2.png" alt=""></figure>
+                </div>
+                <div class="item"> 
+                  <figure><img class="img-fluid" src="./img/home_logo_3.png" alt=""></figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
