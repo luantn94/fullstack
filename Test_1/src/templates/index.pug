@@ -1,0 +1,20 @@
+extends _layout/layout
+
+//- gulp
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home-slider
+		.container
+			.row
+				.col-12
+					figure
+						.img-banner
+							img.img-fluid(src="./img/home_slider_1.png", alt="")
+						figcaption
+							h2 Chúng tôi là Fullstack Vietnam
+							p Reference site about  Lorem Ipsum, giving information on its origins, as well as a random Lípsum generator
+							a.btn.btn-viewmore(href="javascript:void(0)") Xem chi tiết

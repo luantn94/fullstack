@@ -1,0 +1,28 @@
+.home-slider
+	.container
+		
+	figure 
+		position: relative
+		.img-banner
+			width: 100%
+			overflow: hidden	
+		figcaption 
+			position: absolute
+			top: 50%
+			left: 10%
+			transform: translateY(-50%)
+			width: 30%
+			h2, p 
+				color: darken(#fff, 10%)
+			.btn-viewmore
+				background: #ffffff
+				color: #000
+				&:hover
+				&:focus
+					background: lighten(#000, 40%)
+					color: #fff
+			+media-breakpoint-down(md)
+				h2
+					font-size: 1rem
+				p, a 
+					font-size: .7rem
