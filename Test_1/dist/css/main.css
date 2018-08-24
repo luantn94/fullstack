@@ -6379,7 +6379,7 @@ footer img {
     .home-slider figure figcaption .btn-viewmore {
       background: #ffffff;
       color: #000; }
-      .home-slider figure figcaption .btn-viewmore:focus {
+      .home-slider figure figcaption .btn-viewmore:hover, .home-slider figure figcaption .btn-viewmore:focus {
         background: #666666;
         color: #fff; }
     @media (max-width: 991.98px) {
