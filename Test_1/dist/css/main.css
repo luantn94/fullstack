@@ -6331,10 +6331,11 @@ header .container-fluid nav {
       border-radius: 10px 0 10px; }
       header .container-fluid nav ul li.active .nav-link {
         color: #fff !important; }
-    header .container-fluid nav ul li:hover {
+    header .container-fluid nav ul li:hover, header .container-fluid nav ul li:focus {
       background: #000;
-      border-radius: 10px 0 10px; }
-      header .container-fluid nav ul li:hover .nav-link {
+      border-radius: 10px 0 10px;
+      transition: .3s all ease-in-out; }
+      header .container-fluid nav ul li:hover .nav-link, header .container-fluid nav ul li:focus .nav-link {
         color: #fff !important; }
 
 @media (max-width: 767.98px) {
@@ -6363,31 +6364,36 @@ header .navbar-brand img {
 footer img {
   max-width: 200px; }
 
-.home-slider .container-fluid figure {
-  position: relative; }
-  .home-slider .container-fluid figure .img-banner {
-    width: 100%;
-    overflow: hidden;
-    text-align: center; }
-  .home-slider .container-fluid figure figcaption {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    width: 30%; }
-    .home-slider .container-fluid figure figcaption h2, .home-slider .container-fluid figure figcaption p {
-      color: #e6e6e6; }
-    .home-slider .container-fluid figure figcaption .btn-viewmore {
-      background: #ffffff;
-      color: #000;
-      border-radius: 0; }
-      .home-slider .container-fluid figure figcaption .btn-viewmore:hover, .home-slider .container-fluid figure figcaption .btn-viewmore:focus {
-        background: #666666;
-        color: #fff; }
-    @media (max-width: 767.98px) {
-      .home-slider .container-fluid figure figcaption h2 {
-        font-size: 1.5rem; }
-      .home-slider .container-fluid figure figcaption p, .home-slider .container-fluid figure figcaption a {
-        font-size: 0.9rem; } }
+.home-slider .container-fluid .col-12 {
+  padding: 0; }
+  .home-slider .container-fluid .col-12 figure {
+    position: relative;
+    width: 100%; }
+    .home-slider .container-fluid .col-12 figure img {
+      width: 100%; }
+    .home-slider .container-fluid .col-12 figure .img-banner {
+      width: 100%;
+      overflow: hidden;
+      text-align: center; }
+    .home-slider .container-fluid .col-12 figure figcaption {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      width: 30%; }
+      .home-slider .container-fluid .col-12 figure figcaption h2, .home-slider .container-fluid .col-12 figure figcaption p {
+        color: #e6e6e6; }
+      .home-slider .container-fluid .col-12 figure figcaption .btn-viewmore {
+        background: #ffffff;
+        color: #000;
+        border-radius: 0; }
+        .home-slider .container-fluid .col-12 figure figcaption .btn-viewmore:hover, .home-slider .container-fluid .col-12 figure figcaption .btn-viewmore:focus {
+          background: #666666;
+          color: #fff; }
+      @media (max-width: 767.98px) {
+        .home-slider .container-fluid .col-12 figure figcaption h2 {
+          font-size: 1.5rem; }
+        .home-slider .container-fluid .col-12 figure figcaption p, .home-slider .container-fluid .col-12 figure figcaption a {
+          font-size: 0.9rem; } }
 
 /*# sourceMappingURL=main.css.map */
